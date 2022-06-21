@@ -7,7 +7,8 @@
 <body>
     <?php 
         $friends = array("kevin", "karen","justice","camila");
-        echo $friends[1];
+        $friends[5] = "michela";
+        echo $friends[5];
     ?>
 </body>
 </html>
