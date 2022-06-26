@@ -12,17 +12,21 @@
             var $title;
             var $author;
             var $pages;
+
+            function __construct($aTitle, $aAuthor, $aPages){
+                $this->title = $aTitle;
+                $this->author = $aAuthor;
+                $this->pages = $aPages;
+            }
         }
 
-        $book1 = new Book;
-        $book1 -> title = "Harry Potter";
-        $book1 -> author = "J.K Rowling";
-        $book1 -> pages = 400;
+        $book1 = new Book("Harry Potter","JK Rowling", 400);    
 
-        $book2 = new Book;
-        $book2 -> title = "How To Pick Up Gyal Using Your Father Navara";
-        $book2 -> author = "Donald Trump Jr";
-        $book2 -> pages = 3;
-    ?>
+        $book2 = new Book("Lord of the Rings","Tolkien", 700);
+
+        echo $book1->title;
+
+        ?>
+        
 </body>
 </html>
